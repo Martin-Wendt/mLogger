@@ -1,12 +1,5 @@
-﻿using mLogger.Outputs;
-using mLogger.PathCreation;
-using Moq;
-using System;
-using System.Collections.Generic;
+﻿using mLogger.PathCreation;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace mLogger.Test
@@ -16,7 +9,7 @@ namespace mLogger.Test
         [Fact]
         public void CreateFolders()
         {
-            var path = Path.Combine(Directory.GetCurrentDirectory()+ @"\tester");
+            var path = Path.Combine(Directory.GetCurrentDirectory() + @"\tester");
             var sut = new PathCreator(path);
 
             sut.EnsurePathExsists(path);

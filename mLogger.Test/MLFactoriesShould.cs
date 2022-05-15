@@ -2,7 +2,6 @@
 using mLogger.Factory;
 using mLogger.Logger;
 using mLogger.Outputs;
-using mLogger.PathCreation;
 using Moq;
 using Xunit;
 
@@ -28,7 +27,7 @@ namespace mLogger.Test
             var config = new Mock<IMLoggerConfig>();
             var writer = new Mock<IWriteToOutput>();
 
-            ILogOutputHandler sut = LogToConsole.GetInstance(config.Object,writer.Object);
+            ILogOutputHandler sut = LogToConsole.GetInstance(config.Object, writer.Object);
 
             //var sut = fac.CreateHandler(config.Object, path.Object, writer.Object);
 
@@ -41,7 +40,7 @@ namespace mLogger.Test
         {
             var config = new Mock<IMLoggerConfig>();
             var writer = new Mock<IWriteToOutput>();
-            ILogOutputHandler sut = LogToXml.GetInstance(config.Object,writer.Object);
+            ILogOutputHandler sut = LogToXml.GetInstance(config.Object, writer.Object);
 
             Assert.NotNull(sut);
             Assert.IsType<LogToXml>(sut);
@@ -52,7 +51,7 @@ namespace mLogger.Test
         {
             var config = new Mock<IMLoggerConfig>();
             var writer = new Mock<IWriteToOutput>();
-            ILogOutputHandler sut = LogToJson.GetInstance(config.Object,writer.Object);
+            ILogOutputHandler sut = LogToJson.GetInstance(config.Object, writer.Object);
 
 
             Assert.NotNull(sut);

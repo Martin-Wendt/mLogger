@@ -33,8 +33,8 @@ namespace mLogger.Factory
                         ILogOutputHandler outputHandlerChain = LogToXml.GetInstance(_config, _writeToFile);
 
                         outputHandlerChain
-                            .SetSuccessor( LogToJson.GetInstance(_config, _writeToFile))
-                            .SetSuccessor( LogToConsole.GetInstance(_config, _writeToFile));
+                            .SetSuccessor(LogToJson.GetInstance(_config, _writeToFile))
+                            .SetSuccessor(LogToConsole.GetInstance(_config, _writeToFile));
 
                         _instance = MLogger.GetInstance(_config, outputHandlerChain);
                     }

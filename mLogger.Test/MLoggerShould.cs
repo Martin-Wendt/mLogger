@@ -3,7 +3,6 @@ using mLogger.LogEvent;
 using mLogger.Logger;
 using mLogger.Outputs;
 using Moq;
-using System.IO;
 using Xunit;
 
 namespace mLogger.Test
@@ -85,7 +84,7 @@ namespace mLogger.Test
 
             var writer = new Mock<IWriteToOutput>();
             var config = new MLoggerConfig(Enum.LogLevel.Verbose, @"c:\tst", true, true, true);
-            var outputHandler = LogToConsole.GetInstance(config,writer.Object);
+            var outputHandler = LogToConsole.GetInstance(config, writer.Object);
             var xmlLog = LogToXml.GetInstance(config, writer.Object);
             var jsonLog = LogToJson.GetInstance(config, writer.Object);
 

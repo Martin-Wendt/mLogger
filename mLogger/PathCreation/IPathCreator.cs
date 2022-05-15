@@ -4,6 +4,6 @@
     {
         string FolderPath { get; set; }
         void EnsurePathExsists(string subFolder);
-        
+
     }
 }

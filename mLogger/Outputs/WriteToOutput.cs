@@ -1,5 +1,4 @@
 ﻿using mLogger.PathCreation;
-using System.Xml;
 
 namespace mLogger.Outputs
 {
@@ -27,9 +26,9 @@ namespace mLogger.Outputs
         {
             var subFolder = "xml";
             _pathCreator.EnsurePathExsists(subFolder);
-            var fullFilePath = Path.Combine(_pathCreator.FolderPath,subFolder, XmlFilename);
+            var fullFilePath = Path.Combine(_pathCreator.FolderPath, subFolder, XmlFilename);
 
-            using StreamWriter file = WriteToFile(xml, fullFilePath);       
+            using StreamWriter file = WriteToFile(xml, fullFilePath);
         }
 
         public void WriteToConsole(string output)

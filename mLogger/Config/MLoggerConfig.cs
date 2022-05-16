@@ -10,6 +10,7 @@ namespace mLogger.Config
         public bool LogToConsole { get; }
         public bool LogToJSON { get; }
         public bool LogToXML { get; }
+
         public MLoggerConfig(LogLevel loglevel = LogLevel.Warning, string path = @"c:\logs", bool logToConsole = false, bool logToJSON = false, bool logToXML = false)
         {
             Loglevel = loglevel;

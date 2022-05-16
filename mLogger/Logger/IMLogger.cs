@@ -6,6 +6,10 @@ namespace mLogger.Logger
 {
     public interface IMLogger
     {
+        /// <summary>
+        /// Log event
+        /// </summary>
+        /// <param name="mLogEvent">Log event To log</param>
         void Log(IMLogEvent mLogEvent);
     }
 }

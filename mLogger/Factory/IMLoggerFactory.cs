@@ -4,6 +4,10 @@ namespace mLogger.Factory
 {
     public interface IMLoggerFactory
     {
-        IMLogger CreateMLogger();
+        /// <summary>
+        /// Create mlogger instance
+        /// </summary>
+        /// <returns></returns>
+        public IMLogger CreateMLogger();
     }
 }

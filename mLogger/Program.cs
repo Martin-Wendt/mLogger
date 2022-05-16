@@ -14,8 +14,7 @@ namespace runner
             string filePath = @"c:\logs";
 
             IMLoggerConfig conf = new MLoggerConfig(LogLevel.Verbose, filePath, true, true, true);
-
-            MLoggerFactory loggerFactory = new(conf);
+            IMLoggerFactory loggerFactory = new MLoggerFactory(conf);
             IMLogger mLogger = loggerFactory.CreateMLogger();
             IMLogger mLogger2 = loggerFactory.CreateMLogger();
 

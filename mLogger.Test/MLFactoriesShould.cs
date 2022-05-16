@@ -13,7 +13,7 @@ namespace mLogger.Test
         public void MLoggerFactoryShoudlReturnCorrectValue()
         {
             var config = new Mock<IMLoggerConfig>();
-            IMLoggerFactory fac = new MLoggerFactory(config.Object);
+            var fac = new MLoggerFactory(config.Object);
 
             var sut = fac.CreateMLogger();
 

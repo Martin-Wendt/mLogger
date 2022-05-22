@@ -1,6 +1,6 @@
-﻿using mLogger.Logger;
+﻿using mLoggerAPI.Logger;
 
-namespace mLogger.Factory
+namespace mLoggerAPI.Factory
 {
     public interface IMLoggerFactory
     {

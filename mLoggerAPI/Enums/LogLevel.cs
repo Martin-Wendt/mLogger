@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Text.Json.Serialization;
 
-namespace mLogger.Enum
+namespace mLoggerAPI.Enums
 {
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum LogLevel

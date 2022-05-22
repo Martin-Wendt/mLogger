@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mLogger", "mLogger\mLogger.csproj", "{9CEAD599-3E65-434E-B34F-C2DC323228EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mLogger", "mLogger\mLogger.csproj", "{9CEAD599-3E65-434E-B34F-C2DC323228EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mLogger.Test", "mLogger.Test\mLogger.Test.csproj", "{95D8984C-A86A-41F6-8CA7-8953103D4B4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mLogger.Test", "mLogger.Test\mLogger.Test.csproj", "{95D8984C-A86A-41F6-8CA7-8953103D4B4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mLoggerAPI", "mLoggerAPI\mLoggerAPI.csproj", "{0F2ABE52-0A6A-4E72-BF0E-2C6800222AA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{95D8984C-A86A-41F6-8CA7-8953103D4B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95D8984C-A86A-41F6-8CA7-8953103D4B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95D8984C-A86A-41F6-8CA7-8953103D4B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F2ABE52-0A6A-4E72-BF0E-2C6800222AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2ABE52-0A6A-4E72-BF0E-2C6800222AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2ABE52-0A6A-4E72-BF0E-2C6800222AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2ABE52-0A6A-4E72-BF0E-2C6800222AA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

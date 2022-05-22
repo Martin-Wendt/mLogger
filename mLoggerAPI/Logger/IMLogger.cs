@@ -1,8 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using mLogger.LogEvent;
+using mLoggerAPI.LogEvent;
 
-namespace mLogger.Logger
+namespace mLoggerAPI.Logger
 {
     public interface IMLogger
     {
@@ -10,6 +10,6 @@ namespace mLogger.Logger
         /// Log event
         /// </summary>
         /// <param name="mLogEvent">Log event To log</param>
-        void Log(IMLogEvent mLogEvent);
+        void Log(MLogEvent mLogEvent);
     }
 }

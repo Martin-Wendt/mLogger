@@ -1,0 +1,16 @@
+﻿{
+  "BasePath": "c:/logs",
+  "Outputs": [
+    {
+      "Format": "json",
+      "Output": "console",    
+      "MinimumLogLevel": "information"
+    },
+    { 
+      "Format": "xml",
+      "Output": "file",
+      "SubFolder": "xml",
+      "MinimumLogLevel": "information"
+    }
+  ]
+}

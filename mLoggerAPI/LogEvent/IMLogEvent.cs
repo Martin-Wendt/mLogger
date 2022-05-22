@@ -1,8 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using mLogger.Enum;
+using mLoggerAPI.Enums;
 
-namespace mLogger.LogEvent
+namespace mLoggerAPI.LogEvent
 {
     public interface IMLogEvent
     {
@@ -14,6 +14,7 @@ namespace mLogger.LogEvent
         /// Log message
         /// </summary>
         string? Message { get; }
+        DateTimeOffset Timestamp { get; }
 
     }
 }
